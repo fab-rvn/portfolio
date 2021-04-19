@@ -1,31 +1,31 @@
 import React, { useState } from 'react';
-import Sidebar from '../components/Sidebar';
-import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import Info from '../components/Info';
-import { homeObjOne, homeObjTwo, homeObjThree } from '../components/Info/data';
+import { homeObjOne, homeObjThree, homeObjTwo } from '../components/Info/data';
+import Navbar from '../components/Navbar';
 import Portfolio from '../components/Portfolio';
-import Footer from '../components/Footer';
+import Sidebar from '../components/Sidebar';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
-  }
+  };
 
   return (
     <>
       <Sidebar isOpen={isOpen} toggle={toggleNavbar} />
       <Navbar toggle={toggleNavbar} />
       <Hero />
-      <Info {...homeObjOne}/>
+      <Info {...homeObjOne} />
       <Portfolio />
-      <Info {...homeObjTwo}/>
-      <Info {...homeObjThree}/>
+      <Info {...homeObjTwo} />
+      <Info {...homeObjThree} />
       <Footer />
     </>
-  )
-}
+  );
+};
 
 export default Home;

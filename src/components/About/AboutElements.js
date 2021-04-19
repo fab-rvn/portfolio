@@ -1,5 +1,5 @@
-import styled from 'styled-components';
 import { Link as LinkRouter } from 'react-router-dom';
+import styled from 'styled-components';
 
 export const Container = styled.div`
   background: #282c34;
@@ -101,10 +101,10 @@ export const AboutLink = styled.a`
   font-size: 18px;
   font-weight: inherit;
   cursor: pointer;
-  transition: all .3 ease-out;
+  transition: all 0.3 ease-out;
   &:hover {
     color: #fff;
-    transition: all .3 ease-out;
+    transition: all 0.3 ease-out;
   }
   @media screen and (max-width: 480px) {
     font-size: 16px;

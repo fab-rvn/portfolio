@@ -1,9 +1,6 @@
 import React from 'react';
 import SvgSent from '../../assets/images/mail_sent.svg';
-import {
-  FormContent,
-  FormH1,
-  Img } from './ContactElements';
+import { FormContent, FormH1, Img } from './ContactElements';
 
 const Success = () => {
   return (
@@ -13,7 +10,7 @@ const Success = () => {
         <Img src={SvgSent} alt="mail-sent" />
       </FormContent>
     </>
-  )
-}
+  );
+};
 
 export default Success;

@@ -1,6 +1,6 @@
-import Svg1 from '../../assets/images/profile.svg';
 import Svg2 from '../../assets/images/blog.svg';
 import Svg3 from '../../assets/images/mail.svg';
+import Svg1 from '../../assets/images/profile.svg';
 
 export const homeObjOne = {
   id: 'about',
@@ -9,8 +9,7 @@ export const homeObjOne = {
   ligthTextDescr: true,
   topLine: 'frontend developer',
   headline: 'I design and build custom website',
-  description:
-    `Well organised person, problem solver, independent, employee with high attetion to details.
+  description: `Well organised person, problem solver, independent, employee with high attetion to details.
     Interessed in the entire frontend spectrum and working in ambitious projects with postive people.
     `,
   buttonLabel: 'Find Out More',
@@ -30,7 +29,7 @@ export const homeObjTwo = {
   ligthTextDescr: true,
   topLine: '⚠️ still on production..',
   headline: 'Check out my latest post',
-  description: "The Blog: Thoughts on life, work and everything in between.",
+  description: 'The Blog: Thoughts on life, work and everything in between.',
   buttonLabel: 'View Blog',
   goToLink: '/blog',
   imgStart: false,
@@ -48,7 +47,8 @@ export const homeObjThree = {
   ligthTextDescr: false,
   topLine: 'Get in touch',
   headline: "I'm currently available for freelance work.",
-  description: "If you have a project that you want to get started or just fancy saying hey, get in touch.",
+  description:
+    'If you have a project that you want to get started or just fancy saying hey, get in touch.',
   buttonLabel: 'Contact Me',
   goToLink: '/contact',
   imgStart: true,

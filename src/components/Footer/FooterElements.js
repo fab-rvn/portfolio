@@ -1,5 +1,5 @@
-import styled from 'styled-components';
 import { Link as LinkScroll } from 'react-scroll';
+import styled from 'styled-components';
 
 export const FooterContainer = styled.div`
   background: #101522;
@@ -64,9 +64,9 @@ export const FooterIconLink = styled.a`
   color: #fff;
   font-size: 24px;
   cursor: pointer;
-  transition: all .3 ease-out;
+  transition: all 0.3 ease-out;
   &:hover {
     color: #61dafb;
-    transition: all .3 ease-out;
+    transition: all 0.3 ease-out;
   }
 `;

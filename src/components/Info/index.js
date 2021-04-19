@@ -1,18 +1,19 @@
 import React from 'react';
 import BtnLink from '../BtnLink';
 import {
-  InfoContainer,
-  InfoWrapper,
-  InfoRow,
+  BtnWrap,
   Column1,
   Column2,
+  Heading,
+  Img,
+  ImgWrap,
+  InfoContainer,
+  InfoRow,
+  InfoWrapper,
+  Subtitle,
   TextWrapper,
   TopLine,
-  Heading,
-  Subtitle,
-  BtnWrap,
-  ImgWrap,
-  Img } from './InfoElements';
+} from './InfoElements';
 
 const Info = ({
   lightBg,
@@ -28,7 +29,8 @@ const Info = ({
   img,
   alt,
   primary,
-  dark }) => {
+  dark,
+}) => {
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
@@ -44,7 +46,9 @@ const Info = ({
                     to={goToLink}
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
-                  >{buttonLabel}</BtnLink>
+                  >
+                    {buttonLabel}
+                  </BtnLink>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
@@ -57,7 +61,7 @@ const Info = ({
         </InfoWrapper>
       </InfoContainer>
     </>
-  )
-}
+  );
+};
 
 export default Info;

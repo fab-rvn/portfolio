@@ -8,7 +8,7 @@ const BlogPage = () => {
       <ScrollToTop />
       <Blog />
     </>
-  )
-}
+  );
+};
 
 export default BlogPage;

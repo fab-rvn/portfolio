@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { Link as LinkScroll } from 'react-scroll';
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
+import { Link as LinkScroll } from 'react-scroll';
+import styled from 'styled-components';
 
 export const HeroContainer = styled.div`
   background: #282c34;
@@ -12,15 +12,17 @@ export const HeroContainer = styled.div`
   position: relative;
   z-index: 1;
   ::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background:
-      linear-gradient(180deg, rgba(0,0,0,.2) 0% rgba(0,0,0,.6) 100%),
-      linear-gradient(180deg, rgba(0,0,0,.2) 0% transparent 100%);
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0% rgba(0, 0, 0, 0.6) 100%
+      ),
+      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0% transparent 100%);
     z-index: 2;
   }
 `;
@@ -92,9 +94,9 @@ export const Button = styled(LinkScroll)`
   align-items: center;
   outline: none;
   cursor: pointer;
-  trasition: all .2s ease-in-out;
+  trasition: all 0.2s ease-in-out;
   &:hover {
-    trasition: all .2s ease-in-out;
+    trasition: all 0.2s ease-in-out;
     background: #fff;
   }
 `;

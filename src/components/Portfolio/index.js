@@ -1,17 +1,18 @@
 import React from 'react';
-import BtnLink from '../BtnLink';
-import Svg1 from '../../assets/images/react.svg';
-import Svg2 from '../../assets/images/mobile.svg';
+import Svg1 from '../../assets/images/charts.svg';
 import Svg3 from '../../assets/images/plant.svg';
+import Svg2 from '../../assets/images/react.svg';
 import {
+  BtnWrap,
+  Link,
+  PortfolioCard,
   PortfolioContainer,
   PortfolioH1,
-  PortfolioWrapper,
-  PortfolioCard,
-  PortfolioImg,
   PortfolioH2,
+  PortfolioImg,
   PortfolioP,
-  BtnWrap } from './PortfolioElements';
+  PortfolioWrapper,
+} from './PortfolioElements';
 
 const Portfolio = () => {
   return (
@@ -20,13 +21,20 @@ const Portfolio = () => {
       <PortfolioWrapper>
         <PortfolioCard>
           <PortfolioImg src={Svg1} alt="work1" />
-          <PortfolioH2>Work 1</PortfolioH2>
-          <PortfolioP>Work Description</PortfolioP>
+          <PortfolioH2>Expense Tracker App</PortfolioH2>
+          <PortfolioP>
+            Expense Tracker App built using React, Context API, Material-UI and
+            chartjs for the graphs.
+          </PortfolioP>
           <BtnWrap>
-            <BtnLink to="#"
+            <Link
+              href="https://loving-snyder-66f3f9.netlify.app"
+              target="_blank"
               primary="true"
               dark="true"
-            >View Website</BtnLink>
+            >
+              View Website
+            </Link>
           </BtnWrap>
         </PortfolioCard>
         <PortfolioCard>
@@ -34,10 +42,9 @@ const Portfolio = () => {
           <PortfolioH2>Work 2</PortfolioH2>
           <PortfolioP>Work Description</PortfolioP>
           <BtnWrap>
-            <BtnLink to="#"
-              primary="true"
-              dark="true"
-            >View Website</BtnLink>
+            <Link target="_blank" primary="true" dark="true">
+              View Website
+            </Link>
           </BtnWrap>
         </PortfolioCard>
         <PortfolioCard>
@@ -45,15 +52,14 @@ const Portfolio = () => {
           <PortfolioH2>Work 3</PortfolioH2>
           <PortfolioP>Work Description</PortfolioP>
           <BtnWrap>
-            <BtnLink to="#"
-              primary="true"
-              dark="true"
-            >View Website</BtnLink>
+            <Link target="_blank" primary="true" dark="true">
+              View Website
+            </Link>
           </BtnWrap>
         </PortfolioCard>
       </PortfolioWrapper>
     </PortfolioContainer>
-  )
-}
+  );
+};
 
 export default Portfolio;

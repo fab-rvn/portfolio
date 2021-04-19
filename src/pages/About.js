@@ -8,8 +8,7 @@ const AboutPage = () => {
       <ScrollToTop />
       <About />
     </>
-  )
-}
+  );
+};
 
 export default AboutPage;
-

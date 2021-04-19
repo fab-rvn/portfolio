@@ -8,7 +8,7 @@ const ContactPage = () => {
       <ScrollToTop />
       <Contact />
     </>
-  )
-}
+  );
+};
 
 export default ContactPage;

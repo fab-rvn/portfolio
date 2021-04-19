@@ -51,12 +51,12 @@ export const PortfolioCard = styled.div`
   align-items: center;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 1px 3px rgba(0,0,0,.9);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
   cursor: pointer;
-  transition: all .2 ease-in-out;
+  transition: all 0.2 ease-in-out;
   &:hover {
     transform: scale(1.05);
-    transition: all .2 ease-in-out;
+    transition: all 0.2 ease-in-out;
   }
 `;
 
@@ -75,10 +75,32 @@ export const PortfolioH2 = styled.h2`
 export const PortfolioP = styled.p`
   color: #fff;
   font-size: 1rem;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
+  text-align: center;
 `;
 
 export const BtnWrap = styled.div`
   display: flex;
   justify-content: flex-start;
+`;
+
+export const Link = styled.a`
+  background: ${({ primary }) => (primary ? '#61dafb' : '#282c34')};
+  color: ${({ dark }) => (dark ? '#282c34' : '#fff')};
+  padding: ${({ big }) => (big ? '14px 48px' : '12px 30px')};
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
+  white-space: nowrap;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: ${({ primary }) => (primary ? '#fff' : '#61dafb')};
+  }
 `;

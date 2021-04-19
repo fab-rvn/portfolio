@@ -1,39 +1,47 @@
 import React, { useState } from 'react';
 import Video from '../../assets/video/video.mp4';
 import {
-  HeroContainer,
+  ArrowForward,
+  ArrowRight,
+  Button,
   HeroBg,
-  VideoBg,
+  HeroBtn,
+  HeroContainer,
   HeroContent,
   HeroH1,
   HeroP,
-  HeroBtn,
-  Button,
-  ArrowForward,
-  ArrowRight, } from './HeroElements';
+  VideoBg,
+} from './HeroElements';
 
 const Hero = () => {
-
   const [hover, setHover] = useState(false);
 
   const onHover = () => {
     setHover(!hover);
-  }
+  };
 
   return (
     <>
       <HeroContainer id="home">
         <HeroBg>
-          <VideoBg playsinline autoPlay loop muted src={Video} type="video/mp4" />
+          <VideoBg
+            playsinline
+            autoPlay
+            loop
+            muted
+            src={Video}
+            type="video/mp4"
+          />
         </HeroBg>
         <HeroContent>
           <HeroH1>Hi! I'm faber.</HeroH1>
           <HeroP>
-            Web designer and frontend developer based in Barcelona, ES.
-            I love create custom and modern website.
+            Web designer and frontend developer based in Barcelona, ES. I love
+            create custom and modern website.
           </HeroP>
           <HeroBtn>
-            <Button to="portfolio"
+            <Button
+              to="portfolio"
               onMouseEnter={onHover}
               onMouseLeave={onHover}
               primary="true"
@@ -43,13 +51,13 @@ const Hero = () => {
               exact="true"
               offset={-80}
             >
-            View Portfolio {hover ? <ArrowForward /> : <ArrowRight />}
+              View Portfolio {hover ? <ArrowForward /> : <ArrowRight />}
             </Button>
           </HeroBtn>
         </HeroContent>
       </HeroContainer>
     </>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

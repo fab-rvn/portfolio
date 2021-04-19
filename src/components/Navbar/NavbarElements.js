@@ -1,9 +1,9 @@
-import styled from 'styled-components';
-import { Link as LinkScroll} from 'react-scroll';
 import { Link as LinkRouter } from 'react-router-dom';
+import { Link as LinkScroll } from 'react-scroll';
+import styled from 'styled-components';
 
 export const Nav = styled.nav`
-  background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
+  background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -14,7 +14,7 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10;
   @media screen and (max-width: 968px) {
-    transition: all .8s ease;
+    transition: all 0.8s ease;
   }
 `;
 
@@ -77,10 +77,10 @@ export const NavLink = styled(LinkScroll)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-  transition: all .3 ease-in-out;
+  transition: all 0.3 ease-in-out;
   &:hover {
     color: #61dafb;
-    transition: all .3 ease-in-out;
+    transition: all 0.3 ease-in-out;
   }
   &.active {
     border-bottom: 3px solid #61dafb;

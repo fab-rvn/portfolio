@@ -1,9 +1,8 @@
-import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './pages/Home';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import About from './pages/About';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
+import Home from './pages/Home';
 
 function App() {
   return (

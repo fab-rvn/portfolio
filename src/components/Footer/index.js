@@ -1,37 +1,51 @@
 import React from 'react';
-import { animateScroll as scroll } from 'react-scroll';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { animateScroll as scroll } from 'react-scroll';
 import {
   FooterContainer,
-  FooterWrapper,
+  FooterCopy,
+  FooterIconLink,
+  FooterIcons,
   FooterLinks,
   FooterLinksWrapper,
   FooterLogo,
-  FooterCopy,
-  FooterIcons,
-  FooterIconLink } from './FooterElements';
+  FooterWrapper,
+} from './FooterElements';
 
 const Footer = () => {
-
   const toggleHome = () => {
     scroll.scrollToTop();
-  }
+  };
 
   return (
     <FooterContainer>
       <FooterWrapper>
         <FooterLinks>
           <FooterLinksWrapper>
-            <FooterLogo to="home" onClick={toggleHome}>faber</FooterLogo>
+            <FooterLogo to="home" onClick={toggleHome}>
+              faber
+            </FooterLogo>
             <FooterCopy>© faber 2021 All rights are reserved.</FooterCopy>
             <FooterIcons>
-              <FooterIconLink href="https://github.com/fab-rvn" target="_blank" aria-label="GitHub">
+              <FooterIconLink
+                href="https://github.com/fab-rvn"
+                target="_blank"
+                aria-label="GitHub"
+              >
                 <FaGithub />
               </FooterIconLink>
-              <FooterIconLink href="https://www.linkedin.com/in/fabrizio-ervini-a9557356/" target="_blank" aria-label="LinkedIn">
+              <FooterIconLink
+                href="https://www.linkedin.com/in/fabrizio-ervini-a9557356/"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
                 <FaLinkedin />
               </FooterIconLink>
-              <FooterIconLink href="https://twitter.com/faber_dev" target="_blank" aria-label="Twitter">
+              <FooterIconLink
+                href="https://twitter.com/faber_dev"
+                target="_blank"
+                aria-label="Twitter"
+              >
                 <FaTwitter />
               </FooterIconLink>
             </FooterIcons>
@@ -39,7 +53,7 @@ const Footer = () => {
         </FooterLinks>
       </FooterWrapper>
     </FooterContainer>
-  )
-}
+  );
+};
 
 export default Footer;

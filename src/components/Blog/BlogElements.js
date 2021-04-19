@@ -1,5 +1,5 @@
-import styled from 'styled-components';
 import { Link as LinkRouter } from 'react-router-dom';
+import styled from 'styled-components';
 
 export const Container = styled.div`
   background: #282c34;

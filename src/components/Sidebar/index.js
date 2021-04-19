@@ -1,15 +1,16 @@
 import React from 'react';
 import BtnLink from '../BtnLink';
 import {
-  SidebarContainer,
-  Icon,
   CloseIcon,
-  SidebarWrapper,
-  SidebarMenu,
+  Icon,
+  SidebarBtn,
+  SidebarContainer,
   SidebarLink,
-  SidebarBtn } from './SidebarElements';
+  SidebarMenu,
+  SidebarWrapper,
+} from './SidebarElements';
 
-const Sidebar = ({isOpen, toggle}) => {
+const Sidebar = ({ isOpen, toggle }) => {
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
@@ -17,20 +18,27 @@ const Sidebar = ({isOpen, toggle}) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="about" onClick={toggle}>About</SidebarLink>
-          <SidebarLink to="portfolio" onClick={toggle}>Portfolio</SidebarLink>
-          <SidebarLink to="blog" onClick={toggle}>Blog</SidebarLink>
-          <SidebarLink to="contact" onClick={toggle}>Contact</SidebarLink>
+          <SidebarLink to="about" onClick={toggle}>
+            About
+          </SidebarLink>
+          <SidebarLink to="portfolio" onClick={toggle}>
+            Portfolio
+          </SidebarLink>
+          <SidebarLink to="blog" onClick={toggle}>
+            Blog
+          </SidebarLink>
+          <SidebarLink to="contact" onClick={toggle}>
+            Contact
+          </SidebarLink>
         </SidebarMenu>
         <SidebarBtn>
-          <BtnLink to="/contact"
-            dark="true"
-            primary="true"
-          >Contact Me</BtnLink>
+          <BtnLink to="/contact" dark="true" primary="true">
+            Contact Me
+          </BtnLink>
         </SidebarBtn>
       </SidebarWrapper>
     </SidebarContainer>
-  )
-}
+  );
+};
 
 export default Sidebar;
