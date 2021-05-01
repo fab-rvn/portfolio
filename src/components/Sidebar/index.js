@@ -1,9 +1,7 @@
 import React from 'react';
-import BtnLink from '../BtnLink';
 import {
   CloseIcon,
   Icon,
-  SidebarBtn,
   SidebarContainer,
   SidebarLink,
   SidebarMenu,
@@ -31,11 +29,6 @@ const Sidebar = ({ isOpen, toggle }) => {
             Contact
           </SidebarLink>
         </SidebarMenu>
-        <SidebarBtn>
-          <BtnLink to="/contact" dark="true" primary="true">
-            Contact Me
-          </BtnLink>
-        </SidebarBtn>
       </SidebarWrapper>
     </SidebarContainer>
   );

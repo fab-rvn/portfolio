@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Typed from 'react-typed';
 import Video from '../../assets/video/video.mp4';
 import {
   ArrowForward,
@@ -36,8 +37,22 @@ const Hero = () => {
         <HeroContent>
           <HeroH1>Hi! I'm faber.</HeroH1>
           <HeroP>
-            Web designer and frontend developer based in Barcelona, ES. I love
-            create custom and modern website.
+            <Typed
+              strings={[
+                `Web designer and frontend developer based in Barcelona ES.`,
+                `I love create custom and modern website.`,
+                `Specialist in:`,
+                'React',
+                'Redux',
+                'Node',
+                'Express',
+                'Mongo',
+              ]}
+              typeSpeed={40}
+              backSpeed={50}
+              startDelay="500"
+              loop
+            />
           </HeroP>
           <HeroBtn>
             <Button

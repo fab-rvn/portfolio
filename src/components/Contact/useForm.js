@@ -8,7 +8,7 @@ const useForm = (callback, validateForm) => {
     user_message: '',
   });
 
-  const [errors, setErros] = useState({});
+  const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = e => {
@@ -22,7 +22,7 @@ const useForm = (callback, validateForm) => {
   const handleSubmit = e => {
     e.preventDefault();
 
-    setErros(validateForm(values));
+    setErrors(validateForm(values));
 
     if (!values.user_name || !values.user_email || !values.user_message) return;
 

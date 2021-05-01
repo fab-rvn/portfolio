@@ -41,15 +41,17 @@ const Info = ({
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
-                <BtnWrap>
-                  <BtnLink
-                    to={goToLink}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                  >
-                    {buttonLabel}
-                  </BtnLink>
-                </BtnWrap>
+                {goToLink && (
+                  <BtnWrap>
+                    <BtnLink
+                      to={goToLink}
+                      primary={primary ? 1 : 0}
+                      dark={dark ? 1 : 0}
+                    >
+                      {buttonLabel}
+                    </BtnLink>
+                  </BtnWrap>
+                )}
               </TextWrapper>
             </Column1>
             <Column2>

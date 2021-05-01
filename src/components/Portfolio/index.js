@@ -23,8 +23,7 @@ const Portfolio = () => {
           <PortfolioImg src={Svg1} alt="work1" />
           <PortfolioH2>Expense Tracker App</PortfolioH2>
           <PortfolioP>
-            Expense Tracker App built using React, Context API, Material-UI and
-            chartjs for the graphs.
+            Expense Tracker built using React, Context API, Material-UI.
           </PortfolioP>
           <BtnWrap>
             <Link
@@ -39,10 +38,17 @@ const Portfolio = () => {
         </PortfolioCard>
         <PortfolioCard>
           <PortfolioImg src={Svg2} alt="work2" />
-          <PortfolioH2>Work 2</PortfolioH2>
-          <PortfolioP>Work Description</PortfolioP>
+          <PortfolioH2>Todo App</PortfolioH2>
+          <PortfolioP>
+            Todo App build with React, Redux, styled-component
+          </PortfolioP>
           <BtnWrap>
-            <Link target="_blank" primary="true" dark="true">
+            <Link
+              href="https://frontendmaster-todo-app.netlify.app"
+              target="_blank"
+              primary="true"
+              dark="true"
+            >
               View Website
             </Link>
           </BtnWrap>

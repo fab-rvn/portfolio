@@ -94,9 +94,9 @@ export const Button = styled(LinkScroll)`
   align-items: center;
   outline: none;
   cursor: pointer;
-  trasition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   &:hover {
-    trasition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     background: #fff;
   }
 `;

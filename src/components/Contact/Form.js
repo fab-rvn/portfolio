@@ -28,7 +28,7 @@ const Form = ({ submitForm }) => {
           and I’ll get back within 1-2 days.
         </FormP>
         <FormWrap onSubmit={handleSubmit}>
-          <FormLabel hrmlFor="user_name">Name</FormLabel>
+          <FormLabel htmlFor="user_name">Name</FormLabel>
           <FormInput
             name="user_name"
             placeholder="Enter your name"
@@ -39,12 +39,12 @@ const Form = ({ submitForm }) => {
           <FormLabel htmlFor="user_email">Email</FormLabel>
           <FormInput
             name="user_email"
-            placeholder="Enter yuor email"
+            placeholder="Enter your email"
             value={values.user_email}
             onChange={handleChange}
           />
           {errors.user_email && <ErrorMsg>{errors.user_email}</ErrorMsg>}
-          <FormLabel hrmlFor="user_message">Message</FormLabel>
+          <FormLabel htmlFor="user_message">Message</FormLabel>
           <FormTextarea
             name="user_message"
             placeholder="How can I help you?"

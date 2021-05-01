@@ -4,12 +4,10 @@ import { FormContent, FormH1, Img } from './ContactElements';
 
 const Success = () => {
   return (
-    <>
-      <FormContent>
-        <FormH1>Your message was successfully sent!</FormH1>
-        <Img src={SvgSent} alt="mail-sent" />
-      </FormContent>
-    </>
+    <FormContent>
+      <FormH1>Your message was successfully sent!</FormH1>
+      <Img src={SvgSent} alt="mail-sent" />
+    </FormContent>
   );
 };
 

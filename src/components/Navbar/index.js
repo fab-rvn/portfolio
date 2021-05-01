@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
-import BtnLink from '../BtnLink';
 import {
   MobileIcon,
   Nav,
-  NavBtn,
   NavContainer,
   NavItem,
   NavLink,
@@ -95,11 +93,6 @@ const Navbar = ({ toggle }) => {
               </NavLink>
             </NavItem>
           </NavMenu>
-          <NavBtn>
-            <BtnLink to="/contact" primary="true" dark="true">
-              Contact Me
-            </BtnLink>
-          </NavBtn>
         </NavContainer>
       </Nav>
     </>

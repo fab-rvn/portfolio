@@ -1,14 +1,9 @@
 import React, { useState } from 'react';
+import { Container, FormWrapper, Icon } from './ContactElements';
 import Form from './Form';
 import Success from './Success';
-import {
-  Container,
-  FormWrapper,
-  Icon } from './ContactElements';
-
 
 const Contact = () => {
-
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   function submitForm() {
@@ -16,15 +11,13 @@ const Contact = () => {
   }
 
   return (
-    <>
-      <Container>
-        <FormWrapper>
-          <Icon to="/">faber</Icon>
-          {!isSubmitted ? <Form submitForm={submitForm} /> : <Success />}
-        </FormWrapper>
-      </Container>
-    </>
-  )
-}
+    <Container>
+      <FormWrapper>
+        <Icon to="/">faber</Icon>
+        {!isSubmitted ? <Form submitForm={submitForm} /> : <Success />}
+      </FormWrapper>
+    </Container>
+  );
+};
 
 export default Contact;

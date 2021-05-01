@@ -12,8 +12,8 @@ export const homeObjOne = {
   description: `Well organised person, problem solver, independent, employee with high attetion to details.
     Interessed in the entire frontend spectrum and working in ambitious projects with postive people.
     `,
-  buttonLabel: 'Find Out More',
-  goToLink: '/about',
+  buttonLabel: '',
+  goToLink: null,
   imgStart: false,
   img: Svg1,
   alt: 'Profile',
@@ -31,7 +31,7 @@ export const homeObjTwo = {
   headline: 'Check out my latest post',
   description: 'The Blog: Thoughts on life, work and everything in between.',
   buttonLabel: 'View Blog',
-  goToLink: '/blog',
+  goToLink: null,
   imgStart: false,
   img: Svg2,
   alt: 'Blog',
