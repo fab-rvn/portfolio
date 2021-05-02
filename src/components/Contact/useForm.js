@@ -3,9 +3,9 @@ import { useEffect, useState } from 'react';
 
 const useForm = (callback, validateForm) => {
   const [values, setValues] = useState({
-    user_name: '',
-    user_email: '',
-    user_message: '',
+    name: '',
+    email: '',
+    message: '',
   });
 
   const [errors, setErrors] = useState({});
@@ -24,7 +24,7 @@ const useForm = (callback, validateForm) => {
 
     setErrors(validateForm(values));
 
-    if (!values.user_name || !values.user_email || !values.user_message) return;
+    if (!values.name || !values.email || !values.message) return;
 
     emailjs
       .sendForm(

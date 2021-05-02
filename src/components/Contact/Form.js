@@ -28,33 +28,33 @@ const Form = ({ submitForm }) => {
           and I’ll get back within 1-2 days.
         </FormP>
         <FormWrap onSubmit={handleSubmit}>
-          <FormLabel htmlFor="user_name">Name</FormLabel>
+          <FormLabel htmlFor="name">Name</FormLabel>
           <FormInput
-            name="user_name"
+            name="name"
             placeholder="Enter your name"
-            value={values.user_name}
+            value={values.name}
             onChange={handleChange}
           />
-          {errors.user_name && <ErrorMsg>{errors.user_name}</ErrorMsg>}
-          <FormLabel htmlFor="user_email">Email</FormLabel>
+          {errors.name && <ErrorMsg>{errors.name}</ErrorMsg>}
+          <FormLabel htmlFor="email">Email</FormLabel>
           <FormInput
-            name="user_email"
+            name="email"
             placeholder="Enter your email"
-            value={values.user_email}
+            value={values.email}
             onChange={handleChange}
           />
-          {errors.user_email && <ErrorMsg>{errors.user_email}</ErrorMsg>}
-          <FormLabel htmlFor="user_message">Message</FormLabel>
+          {errors.email && <ErrorMsg>{errors.email}</ErrorMsg>}
+          <FormLabel htmlFor="message">Message</FormLabel>
           <FormTextarea
-            name="user_message"
+            name="message"
             placeholder="How can I help you?"
             rows={5}
             cols={5}
-            value={values.user_message}
+            value={values.message}
             onChange={handleChange}
           />
-          {errors.user_message && (
-            <ErrorMsg className="last">{errors.user_message}</ErrorMsg>
+          {errors.message && (
+            <ErrorMsg className="last">{errors.message}</ErrorMsg>
           )}
           <FormBtn type="submit">Send</FormBtn>
         </FormWrap>
